@@ -1,0 +1,19 @@
+{
+    "name": "leanderklees/momentum",
+    "description": "A starterkit to enable often used features for the Laravel Framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Leanderklees\\Momentum\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leander Klees",
+            "email": "leanderklees89@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^8.0"
+    }
+}
