@@ -2,18 +2,33 @@
     "name": "leanderklees/momentum",
     "description": "A starterkit to enable often used features for the Laravel Framework",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Leanderklees\\Momentum\\": "src/"
-        }
-    },
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Leander Klees",
             "email": "leanderklees89@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Leanderklees\\Momentum\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leanderklees\\Momentum\\Tests\\": "tests/"
+        }
+    },
     "require-dev": {
-        "orchestra/testbench": "^8.0"
-    }
+        "orchestra/testbench": "^8.0",
+        "laravel/breeze": "^1.20"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Leanderklees\\Momentum\\MomentumServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
 }
